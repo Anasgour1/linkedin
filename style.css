@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@,500;display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+nav .wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem; 
+    padding:0.3 0.4rem;
+    height: 4rem;
+    background-color: #ffffff;
+}
+
+nav .wraper .left, 
+nav .wraper .right{
+    display: flex;
+    justify-content: space-between;
+     align-items: center; 
+     gap: 2rem; 
+} 
+
+nav .wraper .left{
+    padding-left: 3rem;
+    display: flex;
+    gap: 0.5rem;
+}    
+
+nav .wraper .logo i{
+    font-size: 2rem;
+    color: #0a66c2;
+    cursor: pointer; 
+}
+
+  nav .wraper .left .input{
+    background-color: rgb(237,245,246) ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.3rem;
+}  
+
+nav .wraper .left .input input[type='search']{
+    width: 12rem;
+    border: none;
+    background-color: transparent;
+    height: 2rem;
+}
+
+nav .wraper .left .input input[type='search']::placeholder{
+    font-size: 0.7rem;
+    font-weight: 100;
+    color: rgb(49, 49, 49)
+}
+
+nav .wraper .left .input i{
+    font-size: 0.7rem;
+    color: gray;
+}
+
+nav .wraper .right .home,
+nav .wraper .right .network,
+nav .wraper .right .jobs,
+nav .wraper .right .messaging,
+nav .wraper .right .notification,
+nav .wraper .right .me,
+nav .wraper .right .work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+nav .wraper .right .network:hover,
+nav .wraper .right .jobs:hover,
+nav .wraper .right .messaging:hover,
+nav .wraper .right .notification:hover ,
+nav .wraper .right .me .down:hover,
+nav .wraper .right .work .down:hover{
+  color: #000;
+}
+
+nav .wraper .right .network,
+nav .wraper .right .jobs,
+nav .wraper .right .messaging,
+nav .wraper .right .notification,
+nav .wraper .right .work{
+  color: gray;
+}
+
+nav .wraper .right .home i,
+nav .wraper .right .network i,
+nav .wraper .right .jobs i,
+nav .wraper .right .messaging i,
+nav .wraper .right .notification i{
+    font-size: 1.5rem;
+}
+
+ nav .wraper .right .me .down,
+ nav .wraper .right .work .down{
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 0.5rem;
+ color: gray;
+}
+
+nav .wraper .right .me i:first-child{
+ background: gray;
+ color: #fff;
+ width: 1.5rem;
+ height: 1.5rem;
+ border-radius: 50%;
+ font-size: 0.9rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.wraper a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    width: 10rem;
+    text-align: center;
+    cursor: pointer;
+    color: gray;
+    padding-right: 1rem;
+
+}
+.wraper a:hover{
+    text-decoration: underline;
+    font-size: 0.7rem;
+    color: #000;
+}
+     /* ========side bar start here======= */
+
+.container{
+  display: grid; 
+  grid-template-columns: 20% 52% 28%;
+  gap: 1.4rem;
+  width: 80%;
+  margin: 1.8rem auto;
+}  
+aside .sidebar{
+    background-color: #fff;
+    width: 100%;
+    height: 49vh;
+    position: relative;
+   border-radius: 1rem;
+   overflow: hidden;
+}
+#topimg{
+    width: 4.5rem;
+    height: 4.5rem; 
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 6%;
+    border: 2px solid white;
+}
+
+.sidebar .top {
+    width: 100%;
+    height: 10vh;
+    background-color:#a8c3dbe6;
+    position: absolute;
+border-radius: 1rem 1rem 0rem 0rem;
+}
+
+aside .sidebar .profile{
+    text-align: center;
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; 
+}
+
+.sidebar .profile h5:hover{
+    text-decoration: underline;
+}
+
+.sidebar .profile small{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.sidebar .view{
+    position: relative;
+    display: flex;
+   gap: 0.5rem;
+   flex-direction: column;
+    padding: 0.5rem;
+    top: 6%;  
+}
+
+.sidebar .view .views{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 0.2rem 0rem;
+    cursor: pointer;
+    font-size: 100;
+} 
+.sidebar .view .views:hover{
+background-color: rgb(183, 183, 183);
+}
+
+.sidebar .view .views h5{
+    color: gray;
+}
+
+.sidebar .view .views a{
+    color: rgb(0, 0, 150);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.sidebar .premium{
+    position: relative;
+    top:7% ;
+}
+
+.sidebar .premium h6{
+    color: gray;
+    font-weight: 100;
+    margin-left: 0.4rem;
+    gap: 0.3rem;
+   bottom: 10%;
+ 
+}
+
+.sidebar .premium a{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    color: #000;
+}
+.sidebar .premium a i{
+    color: rgb(211, 211, 33);
+}
+
+hr#premium,
+hr#profile,
+hr#view{
+    margin: 0.5rem 0rem;
+}
+.items{
+   position: relative;
+   top: 7%;
+   display: flex;
+   gap: 0.5rem;
+   margin-left: 1rem;
+   color: gray;
+}
+
+aside .recent_job{
+    background-color: #fff;
+    margin-top: 1rem;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+   border-radius: 1rem;
+   overflow: hidden;
+}
+
+aside .recent_job .recent{
+    margin: 1rem;
+    color: gray;
+
+}
+
+aside .recent_job .recent H5{
+    font-weight: 100;
+
+}
+aside .recent_job .recent .one{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    gap: 0.5rem;
+    color:rgb(84, 84, 84);
+}
+aside .recent_job .recent .one i{
+    font-size: 0.8rem;
+}
+aside .recent_job .Group{
+  margin: 0.4rem 0 0 1rem;
+
+}
+aside .recent_job .Group h5:first-child{
+    color:#0a66c2 ;
+    font-weight: 200;
+
+}
+
+aside .recent_job .Group .two{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    gap: 0.5rem;
+    color: rgb(84, 84, 84);
+}
+.Group .show{
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    color: gray;
+
+}
+aside .events{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1rem 0 1rem;
+}
+
+aside .events h5:hover{
+    text-decoration:underline ;
+    cursor: pointer;
+}
+aside .events i{
+    color: gray;
+    cursor: pointer;
+}
+.discover{
+    text-align: center;
+    margin: 2rem 0 0 0;
+    border-top: 1px solid rgb(144, 144, 144);
+    padding-top: 1rem ;
+}
+.discover a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+  /* ====== main section starts here====== */
+
+main{
+ background: #fff;
+ border-radius: 0.8rem;
+ height: 67vh;
+ position: relative;
+
+}
+main #close{
+    position:absolute;
+    right: 2rem;
+    top: 1rem;
+    color: gray;
+
+}
+main .event{
+    margin: 1.5rem 0 0 1rem;
+}
+main .event h2{
+    font-weight: 200;
+}
+
+ main .box .new_img{
+    width: 600px;
+    height: 267px;
+    border-radius: 0%;
+    margin-top: 0.5rem;
+    margin-left: 0.9rem;
+}
+.content{
+    padding: 0.5rem 1rem;
+
+}
+ p{
+    font-weight: 100;
+    font-size:large;
+    gap:1rem;
+    margin-left: 1rem;
+
+}
+main .box .button{
+    border: none;
+    background-color: #0a66c2;
+    padding: 0.7rem 1rem;
+    border-radius:5rem;
+    margin: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s all ease;
+}   
+
+main .box .button:hover{
+    background-color: #0956a3;
+}
+
+main .media{
+    background: #fff;
+    height: 22vh;
+    margin-top: 4rem;
+    border-radius: 0.8rem;
+}
+
+main .media .search{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+main .media .search img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main .media .search input{
+    border-radius: 5rem;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 0 1.2rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+main .media .search input:hover{
+    background: rgb(233, 233, 233);
+}
+
+main .media .posts{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
+main .media .posts .post{
+    display: flex;
+    gap: 1rem;
+    padding: 0.6rem 0.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+main .media .posts .post h5{
+    font-weight: 400;
+}
+
+main .media .posts .post:nth-child(1) i{
+    color: #0a66c2;
+}
+main .media .posts .post:nth-child(2) i{
+    color: #19c20a;
+}
+main .media .posts .post:nth-child(3) i{
+    color: #3187dd;
+}
+main .media .posts .post:nth-child(4) i{
+    color: #c20ab9;
+}
+
+main .media .posts .post:hover{
+    background: rgb(235, 235, 235);
+    border-radius: 0.2rem;
+}
+
+
+/* ====== Right side starts here====== */
+
+.right_side{
+    background: #fff;
+    border-radius: 0.8rem;
+    height: 55vh;
+}
+
+.right_side .news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.right_side .news h4{
+    font-weight: 400;
+}
+
+.right_side .latest_news{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.right_side .latest_news:hover{
+    background: rgb(231, 231, 231);
+}
+
+.right_side .latest_news .one{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.right_side .latest_news .one h5{
+    font-weight: 500;
+}
+
+.right_side .latest_news .one i{
+    font-size: 0.5rem;
+    color: gray;
+}
+
+.right_side .latest_news .two{
+    margin: 0 1.9rem;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.right_side .show_more{
+    display: flex;
+    gap: 0.5rem;
+    color: gray;
+    align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.right_side .show_more h5{
+    font-weight: 400;
+}
+
+div .adv .down img{
+    width: 338px;
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 5rem;
+
+}
